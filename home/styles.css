@@ -28,7 +28,14 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #667eea;
+    color: #000000;
+}
+
+.logo .subtitle {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 0.5rem;
 }
 
 nav ul {
@@ -46,11 +53,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #667eea;
+    color: #e9e69d;
 }
 
 .hero {
-    margin-top: 80px;
+    margin-top: 160px;
+    margin-bottom: 100px;
     padding: 6rem 5% 4rem;
     text-align: center;
     color: white;
@@ -74,7 +82,7 @@ nav a:hover {
     display: inline-block;
     padding: 1rem 2.5rem;
     background: white;
-    color: #667eea;
+    color: #e9e69d;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
