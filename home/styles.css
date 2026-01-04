@@ -25,6 +25,11 @@ header {
     align-items: center;
 }
 
+.page-content {
+    margin-top: 80px;
+    min-height: calc(100vh - 300px);
+}
+
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -88,7 +93,6 @@ nav a:hover {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     animation: fadeInUp 1s 0.3s backwards;
 }
 
