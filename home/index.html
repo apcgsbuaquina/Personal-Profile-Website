@@ -3,89 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <div class="logo">Your Name</div>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#interests">Interests</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a onclick="document.getElementById('interests').scrollIntoView({behavior: 'smooth'})">Interests</a></li>
+                <li><a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a></li>
+                <li><a onclick="document.getElementById('hobbies').scrollIntoView({behavior: 'smooth'})">Hobbies</a></li>
+                <li><a onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero / Greeting -->
-    <section class="hero">
-        <h1>Hello, I’m Your Name 👋</h1>
-        <p>
-            I’m a student / aspiring professional / creative individual with a passion for
-            learning, building meaningful projects, and exploring new ideas.
-        </p>
+    <div class="hero">
+        <h1>Hello, I'm [Your Name]!</h1>
+        <p>Welcome to my personal space on the web. I'm a passionate individual with diverse interests ranging from technology to creative pursuits. I believe in continuous learning and making meaningful connections. Explore my profile to learn more about what drives me and what I enjoy doing.</p>
+        <a href="#about" class="cta-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More About Me</a>
+    </div>
+
+    <section id="interests">
+        <h2>My Interests</h2>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <h3>Technology</h3>
+                <p>Exploring the latest in web development, AI, and innovative digital solutions that shape our future.</p>
+            </div>
+            <div class="interest-card">
+                <h3>Design</h3>
+                <p>Creating beautiful and functional user experiences through thoughtful design and attention to detail.</p>
+            </div>
+            <div class="interest-card">
+                <h3>Learning</h3>
+                <p>Constantly expanding my knowledge through courses, books, and hands-on projects in various fields.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- About Me -->
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            This section contains a short background about who you are.  
-            You can talk about your education, goals, personality, or what motivates you.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <p class="about-text">I'm a dedicated professional with a passion for innovation and creativity. My journey has been shaped by curiosity and a drive to make a positive impact. I thrive in collaborative environments and enjoy tackling challenging problems with fresh perspectives. When I'm not working, you'll find me exploring new technologies, reading, or spending time with friends and family.</p>
+        <p class="about-text">I believe in the power of continuous growth and am always looking for opportunities to learn and contribute to meaningful projects. My approach combines analytical thinking with creative problem-solving to deliver results that matter.</p>
     </section>
 
-    <!-- Interests -->
-    <section id="interests">
-        <h2>Interests</h2>
-        <ul>
-            <li>Technology and innovation</li>
-            <li>Design and creativity</li>
-            <li>Learning new skills</li>
-            <li>Personal development</li>
-        </ul>
-    </section>
-
-    <!-- Hobbies -->
     <section id="hobbies">
         <h2>Hobbies</h2>
-        <p>
-            I enjoy spending my free time doing various activities that help me relax
-            and improve myself.
-        </p>
-
-        <div class="hobby-list">
-            <div class="hobby">Hobby 1</div>
-            <div class="hobby">Hobby 2</div>
-            <div class="hobby">Hobby 3</div>
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <h3>📚 Reading</h3>
+                <p>Fiction, non-fiction, and everything in between</p>
+            </div>
+            <div class="hobby-item">
+                <h3>🎵 Music</h3>
+                <p>Listening to and discovering new artists</p>
+            </div>
+            <div class="hobby-item">
+                <h3>✈️ Travel</h3>
+                <p>Exploring new cultures and destinations</p>
+            </div>
+            <div class="hobby-item">
+                <h3>🎮 Gaming</h3>
+                <p>Strategy and adventure games enthusiast</p>
+            </div>
         </div>
-
-        <a href="#" class="view-more">View More</a>
+        <button class="view-more-btn" onclick="alert('More hobbies coming soon! This could link to a dedicated hobbies page.')">View More</button>
     </section>
 
-    <!-- Extra Section (Optional but Useful) -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>
-            You can list technical or soft skills here.
-            Example: HTML, CSS, teamwork, problem-solving, etc.
-        </p>
-    </section>
-
-    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Social: @yourusername</p>
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <strong>Email</strong><br>
+                    your.email@example.com
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <strong>Phone</strong><br>
+                    +1 (123) 456-7890
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <strong>Location</strong><br>
+                    Your City, Country
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
-
 </body>
 </html>
